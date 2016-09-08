@@ -1,5 +1,7 @@
 package sort;
 
+import common.Swap;
+
 /*
  * 隣接するデータの大小を比較し、必要に応じて入れ替える
  */
@@ -13,9 +15,7 @@ public class BubbleSort {
 		for(int i=0; i<length-1; i++) {
 			for(int j=0; j<length-1-i; j++) {
 				if(data[j] > data[j+1]) {
-					int tmp = data[j];
-					data[j] = data[j+1];
-					data[j+1] = tmp;
+					Swap.integerSwap(data, j, j+1);
 				}
 			}
 		}
@@ -28,9 +28,7 @@ public class BubbleSort {
 		for(int i=0; i<length-1; i++) {
 			for(int j=0; j<length-1-i; j++) {
 				if(data[j] < data[j+1]) {
-					int tmp = data[j];
-					data[j] = data[j+1];
-					data[j+1] = tmp;
+					Swap.integerSwap(data, j, j+1);
 				}
 			}
 		}
