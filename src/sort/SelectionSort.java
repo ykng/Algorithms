@@ -3,6 +3,10 @@ package sort;
 import common.Finder;
 import common.Swap;
 
+/*
+ * 対象データの中から最大値（もしくは最小値）のデータを取り出して、先頭のデータと交換する
+ */
+
 public class SelectionSort {
 
 	//昇順ソート
