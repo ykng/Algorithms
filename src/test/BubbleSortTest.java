@@ -10,16 +10,17 @@ public class BubbleSortTest {
 		int[] testdata2 = {5,2,7,4,9,3,1,6,10,8};
 		int[] testdata3 = {5,5,3,3,7,9,3,9,3,7};
 
-		BubbleSort bs = new BubbleSort();
-
-		bs.ascendingSort(testdata1);
-		Printer.printResult(testdata1);
-
-		bs.descendingSort(testdata2);
-		Printer.printResult(testdata2);
-
-		bs.ascendingSort(testdata3);
-		Printer.printResult(testdata3);
+		test(testdata1, true);
+		test(testdata2, false);
+		test(testdata3, true);
 	}
 
+	public static void test(int[] testdata, boolean isAscending) {
+		if( isAscending == true ){
+			BubbleSort.ascendingSort(testdata);
+		}else{
+			BubbleSort.descendingSort(testdata);
+		}
+		Printer.printResult(testdata);
+	}
 }

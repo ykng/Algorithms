@@ -10,16 +10,17 @@ public class SelectionSortTest {
 		int[] testdata2 = {5,2,7,4,9,3,1,6,10,8};
 		int[] testdata3 = {5,5,3,3,7,9,3,9,3,7};
 
-		SelectionSort ss = new SelectionSort();
-
-		ss.ascendingSort(testdata1);
-		Printer.printResult(testdata1);
-
-		ss.descendingSort(testdata2);
-		Printer.printResult(testdata2);
-
-		ss.ascendingSort(testdata3);
-		Printer.printResult(testdata3);
+		test(testdata1, true);
+		test(testdata2, false);
+		test(testdata3, true);
 	}
 
+	public static void test(int[] testdata, boolean isAscending) {
+		if( isAscending == true ){
+			SelectionSort.ascendingSort(testdata);
+		}else{
+			SelectionSort.descendingSort(testdata);
+		}
+		Printer.printResult(testdata);
+	}
 }
