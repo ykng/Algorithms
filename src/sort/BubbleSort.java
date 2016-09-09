@@ -33,15 +33,4 @@ public class BubbleSort {
 			}
 		}
 	}
-
-	// 結果表示
-	public void printResult(int[] data){
-		System.out.print("Result of Sorting : [ ");
-
-		for(int i=0; i<data.length; i++) {
-			System.out.print(data[i] + " ");
-		}
-
-		System.out.println("]");
-	}
 }
