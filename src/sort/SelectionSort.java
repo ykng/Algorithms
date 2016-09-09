@@ -11,20 +11,16 @@ public class SelectionSort {
 
 	//昇順ソート
 	public	static void ascendingSort(int[] data) {
-		int index;
-
 		for(int i=0; i<data.length-1; i++) {
-			index = Finder.findMin(data, i, data.length-1);
+			int index = Finder.findMin(data, i, data.length-1);
 			Swap.integerSwap(data, i, index);
 		}
 	}
 
 	// 降順ソート
 	public static void descendingSort(int[] data) {
-		int index;
-
 		for(int i=0; i<data.length-1; i++) {
-			index = Finder.findMax(data, i, data.length-1);
+			int index = Finder.findMax(data, i, data.length-1);
 			Swap.integerSwap(data, i, index);
 		}
 	}
