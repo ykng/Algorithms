@@ -7,7 +7,7 @@ import common.Swap;
  * 未整列の側からデータを一つずつ整列済みの列の「適切な位置」に挿入して、全体を整列。
  */
 
-public class InsertionSort {
+public class InsertionSort{
 
 	//昇順ソート
 	public	static void ascendingSort(int[] data) {
