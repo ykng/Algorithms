@@ -3,8 +3,9 @@ package common;
 public class Finder {
 
 	// int[]型のdataのs番目からe番目の中で最も大きい数値を見つけ、そのインデックス番号を返す
-	public static int findMax(int[] data, int s, int e) {
+	public static int findMaxIndex(int[] data, int s, int e) {
 		int index = 0;
+		int count = 0;
 		int max = 0;
 
 		for(int i=s; i<=e; i++) {
@@ -18,7 +19,7 @@ public class Finder {
 	}
 
 	// int[]型のdataのs番目からe番目の中で最も小さい数値を見つけ、そのインデックス番号を返す
-	public static int findMin(int[] data, int s, int e) {
+	public static int findMinIndex(int[] data, int s, int e) {
 		int index = 0;
 		int min = Integer.MAX_VALUE;
 
