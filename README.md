@@ -10,7 +10,7 @@
 　  
   
 ### sort
-these sample codes have asceindigSort and descendingSort methods.
+these sample codes have ascendigSort and descendingSort methods.
 - BubbleSort  
 - HeapSort  
 - InsertionSort  
